@@ -1,0 +1,17 @@
+@import 'variables';
+
+.home-carousel-cont{
+    position: relative;
+    img{
+        width:100%;
+    }
+    .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: rgba(44,62,80,.5);
+        z-index: 2;
+    }
+}

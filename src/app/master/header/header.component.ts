@@ -35,7 +35,7 @@ export class HeaderComponent implements AfterViewInit {
     const el = document.getElementById(id);
     event.preventDefault();
     event.target.className = 'nav-item nav-link active';
-    el.scrollIntoView({ behavior: 'smooth' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   }
 
   onLangChange(lang: string) {

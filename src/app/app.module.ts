@@ -7,6 +7,11 @@ import { FooterComponent } from './master/footer/footer.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
+import { PartnersComponent } from './partners/partners.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PackadgesComponent } from './packadges/packadges.component';
+import { OurCompanyComponent } from './our-company/our-company.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');
@@ -16,7 +21,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeCarouselComponent,
+    PartnersComponent,
+    ContactUsComponent,
+    PackadgesComponent,
+    OurCompanyComponent
   ],
   imports: [
     HttpClientModule,

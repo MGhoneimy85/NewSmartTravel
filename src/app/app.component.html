@@ -1,14 +1,17 @@
 <app-layout  [ngClass]="{en: translate.currentLang == 'en' , ar: translate.currentLang == 'ar'  }">
+  <section>
+      <app-home-carousel></app-home-carousel>
+  </section>
   <section id="packages">
-
+    <app-packadges></app-packadges>
   </section>
   <section id="ourcompany">
-
+    <app-our-company></app-our-company>
   </section>
   <section id="partners">
-
+    <app-partners></app-partners>
   </section>
   <section id="contactus">
-
+    <app-contact-us></app-contact-us>
   </section>
 </app-layout>

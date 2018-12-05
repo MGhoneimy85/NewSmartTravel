@@ -1,9 +1,23 @@
 {
+  "New_Smart_Travel" : "New Smart Travel",
+  
   "home": "HOME",
   "packages" : "PACKAGES",
   "ourcompany": "OUR COMPANY",
   "partners" : "PARTNERS",
   "contactus" : "CONTACT US",
 
-  "callus" : "Call Us Now :"
+  "callus" : "Call Us Now :",
+  "aviation_tickets" : "Aviation Tickets",
+  "hotel_reservation" : "Hotel Reservation",
+  "VIP_service" : "VIP Service",
+  "honeymoon_planning_service" : "Honeymoon Planning Service",
+  "aviation_tickets_brief" : "NewSmart Travel is always planning to satisfy all levels of booking International and domestic flights with the lowest ticket price, and we provide the best services Best prices on all airlines in which we are agents for all lines We are also a member of IATA.",
+  "hotel_reservation_brief" : "NewSmart Travel is always planning to satisfy all levels of booking Featured hotels within Egypt and all over the world we also provide the best Services at the best prices in all hotels to provide the best services to customers Provide all the information needed by both restaurants and shobeng markets and means Transport and others.",
+  "VIP_service_brief" : "VIP service reception and farewell from all ports of the Arab Republic of Egypt",
+  "honeymoon_planning_service_brief" : "honeymoon planning services that will customize your ideal itinerary from the inspiration phase down to that final, romantic meal.",
+
+  "our_company_brief" : "NewSmart Travel is the independent and local arm of New Smart Holding Group and one of its largest companies in the world of domestic tourism And the aim of its establishment is to spread inside and outside Egypt and not the target Including profitability, but the goal is to be present in all Arab and international markets Member of the Chamber of Companies and Agencies Travel and Tourism."
+
+ 
 }

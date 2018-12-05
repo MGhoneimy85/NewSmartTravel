@@ -1,0 +1,15 @@
+@import 'variables';
+h3 , p{
+    color: $lightColor;
+}
+.service-item{
+    text-align: center;
+    i{
+        color:$lightColor;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    h5{
+        color:$lightColor;
+    }
+}
