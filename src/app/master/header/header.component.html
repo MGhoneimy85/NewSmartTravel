@@ -1,0 +1,48 @@
+<div class="top-header" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6   call-us">
+        {{ 'callus' | translate }} <span dir="LTR">012 222 11 932</span>
+      </div>
+      <div class="col-md-6   social-media-icons">
+        <div class="lang">
+            <div (click)="onLangChange('en')" *ngIf="language.currentLang == 'ar'" class="lang-item">English</div>
+            <div (click)="onLangChange('ar')" *ngIf="language.currentLang == 'en'"  class="lang-item">العربيّة</div>
+        </div>
+        <a class="nav-item nav-link" href="https://youtube.com/" target="_blank">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://instagram.com/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://facebook.com/" target="_blank">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header" [class.sticky] = "sticky" #stickyMenu>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 ">
+        <a class="logo" href="#home">
+          <img alt="New Smart Travel" src="../../../assets/images/logo.png" />
+        </a>
+      </div>
+      <div class="col-md-9 ">
+        <nav class="navbar">
+          <div class="navbar-expand mr-auto">
+            <div class="navbar-nav">
+                <a *ngFor="let n of menuItems" class="nav-item nav-link" [class.active]="clicked === n" 
+                (click)="clicked = n;scroll( n , $event)">{{ n | translate}}</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

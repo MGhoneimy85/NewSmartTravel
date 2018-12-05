@@ -1,16 +1,14 @@
-<app-layout>
-  <div class="jumbotron">
-    <h1>Angular CLI v6 + Bootstrap & FontAwesome</h1>
-    <p>
-      In this tutorial you learn how to use Angular CLI v6 with Bootstrap and FontAwesome!
-    </p>
-  </div>
-  <div class="container">
-      <tabset>
-        <tab heading="Basic title" id="tab1">Basic content</tab>
-        <tab heading="Basic Title 1">Basic content 1</tab>
-        <tab heading="Basic Title 2">Basic content 2</tab>
-      </tabset>
-  </div>
-</app-layout>
+<app-layout  [ngClass]="{en: translate.currentLang == 'en' , ar: translate.currentLang == 'ar'  }">
+  <section id="packages">
 
+  </section>
+  <section id="ourcompany">
+
+  </section>
+  <section id="partners">
+
+  </section>
+  <section id="contactus">
+
+  </section>
+</app-layout>
