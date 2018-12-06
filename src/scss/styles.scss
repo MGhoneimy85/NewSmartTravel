@@ -6,7 +6,7 @@
 
 // generic styles accorss the portal
 h3{
-    font:normal 30px Arial;
+    font-size: 30px;
     text-align: center;
     margin:40px 0;
     display: inline-block;
@@ -17,6 +17,7 @@ h3{
 
 .ar{
     direction: rtl;
+    font-family: Tahoma;
     .pull-left{
         float:right !important;
     }

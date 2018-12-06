@@ -8,4 +8,14 @@
           <div *ngFor="let n of packagesCatList" class="category-item" [class.active]="clicked === n" 
           (click)="clicked = n;selectedCategory(n)">{{ n | translate}}</div>
       </div>
+      <div class="row packages">
+            <div class="col"  *ngFor="let item of packagesListFiltered">
+              <div class="package">
+                <img src="{{item.imgPath}}" />
+                <div class="title" (click)="goToDetailsPage(item)"  *ngIf="language.currentLang == 'en'">{{ item.title | translate}}</div>
+                <div class="title" (click)="goToDetailsPage(item)"  *ngIf="language.currentLang == 'ar'">{{ item.titleAR | translate}}</div>
+                <div class="price">{{ 'starting_from' | translate }} {{ item.startingPrice }}</div>
+              </div>
+            </div>
+      </div>
 </div>
