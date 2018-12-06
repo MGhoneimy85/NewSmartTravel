@@ -83,3 +83,20 @@
         }
     }
 }
+
+// responsive
+
+@media (max-width:700px){
+    .navbar-expand .navbar-nav{
+        flex-direction: column;
+    }
+    .header.sticky{
+        display: none;
+    }
+    .call-us{
+        text-align: center!important;
+    }
+    .social-media-icons{
+        justify-content: center;
+    }
+}

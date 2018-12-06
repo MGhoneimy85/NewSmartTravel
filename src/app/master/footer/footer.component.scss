@@ -13,6 +13,7 @@
     a{
       color: $lightColor;
       font-size: 12px;
+      text-align: center;
       &.active{
         color: $secondryColor;
       }
@@ -25,5 +26,14 @@
     color: $lightColor;
     font-size: 10px;
     padding:10px 0 30px 0;
+  }
+}
+
+
+// responsive
+
+@media (max-width:700px){
+  .navbar-expand .navbar-nav{
+      flex-direction: column;
   }
 }

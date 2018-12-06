@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements AfterViewInit {
   sticky: Boolean = false;
   menuPosition: any;
-  menuItems = ['home' , 'packages' , 'ourcompany' , 'partners' , 'contactus'];
+  menuItems = ['home', 'packages', 'ourcompany', 'partners', 'contactus'];
 
   clicked = 'home';
   @ViewChild('stickyMenu') menuElement: ElementRef;
@@ -24,11 +24,13 @@ export class HeaderComponent implements AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
-    const windowScroll = window.pageYOffset;
-    if (windowScroll >= this.menuPosition) {
-      this.sticky = true;
-    } else {
-      this.sticky = false;
+    if (window.innerWidth > 600) {
+      const windowScroll = window.pageYOffset;
+      if (windowScroll >= this.menuPosition) {
+        this.sticky = true;
+      } else {
+        this.sticky = false;
+      }
     }
   }
   scroll(id) {

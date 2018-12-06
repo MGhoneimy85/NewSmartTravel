@@ -12,6 +12,7 @@ h3 , p{
         margin:5px;
         cursor: pointer;
         border-radius: 3px;
+        text-align: center;
         &.active{
             background: $secondryColor;
         }
@@ -90,7 +91,11 @@ h3 , p{
 }
 
 @media (max-width: 500px){
+    .category-tabs{
+        flex-direction: column;
+    }
     .packages{
+
         .col{
             flex: 1 1 100%;
         }
