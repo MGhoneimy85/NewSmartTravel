@@ -1,8 +1,10 @@
-
-
-
-<div class="home-carousel-cont">
-    <img alt="paris" src="../../assets/content-images/paris.png" />
-    <div class="overlay"></div>
-</div>
-
+<ngb-carousel *ngIf="packagesList">
+  <ng-template ngbSlide *ngFor="let pack of packagesList">
+    <img [src]="pack.imgPath" alt="Random slide">
+    <div class="carousel-caption">
+      <h3>{{ pack.title }}</h3>
+      <p>{{ pack.desc }}</p>
+      <button type="button" >More info</button>
+    </div>
+  </ng-template>
+</ngb-carousel>

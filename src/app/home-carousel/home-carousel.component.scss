@@ -15,3 +15,63 @@
         z-index: 2;
     }
 }
+
+/deep/ .carousel {
+    .carousel-inner{
+        .carousel-item{
+            img{
+                width: 100%!important;
+                height:600px;
+            }
+        }
+    }
+    .carousel-caption{
+        width:100%;
+        background: rgba(0,0,0,.7);
+        right:0;
+        left:0;
+        bottom:0;
+        padding-bottom: 30px;
+        h3{
+            margin:10px 0;
+        }
+        p{
+            margin:0;
+        }
+        button{
+            background:$secondryColor;
+            border: 0;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 20px;
+            margin:10px 0;
+        }
+    }
+    .carousel-control-prev-icon{
+        width: 57px;
+        height: 57px;
+        background-color: $secondryColor;
+        background-size: 30% 30%;
+        position: absolute;
+        left:0
+    }
+    .carousel-control-next-icon{
+        width: 57px;
+        height: 57px;
+        background-color: $secondryColor;
+        background-size: 30% 30%;
+        position: absolute;
+        right:0
+    }
+    .carousel-indicators{
+        margin-bottom: 0;
+        li{
+            width:12px;
+            height: 12px;
+            background-color: $lightColor;
+            &.active{
+                background-color: $secondryColor;
+            }
+        }
+    }
+}

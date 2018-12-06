@@ -12,6 +12,8 @@ import { PartnersComponent } from './partners/partners.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PackagesComponent } from './packages/packages.component';
 import { OurCompanyComponent } from './our-company/our-company.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');
@@ -37,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    NgbModule,
     BrowserModule
   ],
   exports: [LayoutComponent],

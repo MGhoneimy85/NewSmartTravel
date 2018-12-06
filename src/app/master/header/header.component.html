@@ -1,10 +1,10 @@
-<div class="top-header d-sm-none d-md-block" id="home">
+<div class="top-header" id="home">
   <div class="container">
     <div class="row">
       <div class="col-md-6 call-us">
         {{ 'callus' | translate }} <span dir="LTR">012 222 11 932</span>
       </div>
-      <div class="col-md-6   social-media-icons">
+      <div class="col-md-6 social-media-icons">
         <div class="lang">
             <div (click)="onLangChange('en')" *ngIf="language.currentLang == 'ar'" class="lang-item">English</div>
             <div (click)="onLangChange('ar')" *ngIf="language.currentLang == 'en'"  class="lang-item">العربيّة</div>
