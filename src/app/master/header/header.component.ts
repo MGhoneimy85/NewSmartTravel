@@ -31,10 +31,8 @@ export class HeaderComponent implements AfterViewInit {
       this.sticky = false;
     }
   }
-  scroll(id, event) {
+  scroll(id) {
     const el = document.getElementById(id);
-    event.preventDefault();
-    event.target.className = 'nav-item nav-link active';
     el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   }
 

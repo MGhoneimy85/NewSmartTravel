@@ -1,5 +1,28 @@
-<nav class="navbar navbar-dark bg-dark">
-  <div class="navbar-expand m-auto navbar-text">
-      Copyright Karim Hedwan. All Right Reserved. 2018
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col footer-logo text-center">
+          <img src="../../../assets/images/footer-logo.png" alt="{{ 'New_Smart_Travel' | translate}}" title="{{ 'New_Smart_Travel' | translate}}" />
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col">
+          <nav class="navbar">
+              <div class="navbar-expand">
+                <div class="navbar-nav">
+                    <a *ngFor="let n of menuItems" class="nav-item nav-link" [class.active]="clicked === n" 
+                    (click)="clicked = n;scroll( n )">{{ n | translate}}</a>
+                </div>
+              </div>
+            </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center copyrights">
+          {{ 'footer_copyrights' | translate }}
+      </div>
+    </div>
   </div>
-</nav>
+</div>

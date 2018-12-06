@@ -16,8 +16,13 @@
   "hotel_reservation_brief" : "NewSmart Travel is always planning to satisfy all levels of booking Featured hotels within Egypt and all over the world we also provide the best Services at the best prices in all hotels to provide the best services to customers Provide all the information needed by both restaurants and shobeng markets and means Transport and others.",
   "VIP_service_brief" : "VIP service reception and farewell from all ports of the Arab Republic of Egypt",
   "honeymoon_planning_service_brief" : "honeymoon planning services that will customize your ideal itinerary from the inspiration phase down to that final, romantic meal.",
-
-  "our_company_brief" : "NewSmart Travel is the independent and local arm of New Smart Holding Group and one of its largest companies in the world of domestic tourism And the aim of its establishment is to spread inside and outside Egypt and not the target Including profitability, but the goal is to be present in all Arab and international markets Member of the Chamber of Companies and Agencies Travel and Tourism."
-
+  "domestic" : "Domestic",
+  "foreign" : "Foreign",
+  "arab" : "Arab",
+  "religious" : "Religious",
+  "all" : "All",
+  "packages_brief" : "Best 2019 packages where people love to stay!",
+  "our_company_brief" : "NewSmart Travel is the independent and local arm of New Smart Holding Group and one of its largest companies in the world of domestic tourism And the aim of its establishment is to spread inside and outside Egypt and not the target Including profitability, but the goal is to be present in all Arab and international markets Member of the Chamber of Companies and Agencies Travel and Tourism.",
+  "footer_copyrights" : "Copyright Karim Hedwan. All Right Reserved. 2019" 
  
 }

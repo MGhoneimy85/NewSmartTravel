@@ -1,7 +1,7 @@
 <div class="top-header" id="home">
   <div class="container">
     <div class="row">
-      <div class="col-md-6   call-us">
+      <div class="col-md-6 call-us">
         {{ 'callus' | translate }} <span dir="LTR">012 222 11 932</span>
       </div>
       <div class="col-md-6   social-media-icons">
@@ -30,7 +30,7 @@
     <div class="row">
       <div class="col-md-3 ">
         <a class="logo" href="#home">
-          <img alt="{{ 'New_Smart_Travel' | translate }}" title="{{ 'New_Smart_Travel' | translate }}" src="../../../assets/images/logo.png" />
+          <img class="pull-left" alt="{{ 'New_Smart_Travel' | translate }}" title="{{ 'New_Smart_Travel' | translate }}" src="../../../assets/images/logo.png" />
         </a>
       </div>
       <div class="col-md-9 ">
@@ -38,7 +38,7 @@
           <div class="navbar-expand mr-auto">
             <div class="navbar-nav">
                 <a *ngFor="let n of menuItems" class="nav-item nav-link" [class.active]="clicked === n" 
-                (click)="clicked = n;scroll( n , $event)">{{ n | translate}}</a>
+                (click)="clicked = n;scroll( n )">{{ n | translate}}</a>
             </div>
           </div>
         </nav>

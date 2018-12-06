@@ -1,4 +1,29 @@
 @import 'variables';
-.fa-heart {
-    color: hotpink;
+
+.footer{
+  background: $primaryColor;
+  .footer-logo{
+    img{
+      margin:20px 0;
+    }
   }
+  .navbar{
+    display: flex;
+    justify-content: center;
+    a{
+      color: $lightColor;
+      font-size: 12px;
+      &.active{
+        color: $secondryColor;
+      }
+    }
+  }
+  hr{
+    border-top: 1px solid rgba(57,76,95,1)
+  }
+  .copyrights{
+    color: $lightColor;
+    font-size: 10px;
+    padding:10px 0 30px 0;
+  }
+}

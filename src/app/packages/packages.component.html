@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>{{ 'packages' | translate }}
+      </h3>
+      <p class="text-center">
+        {{ 'packages_brief' | translate }}
+      </p>
+      <div class="category-tabs">
+          <div *ngFor="let n of packagesCatList" class="category-item" [class.active]="clicked === n" 
+          (click)="clicked = n;selectedCategory(n)">{{ n | translate}}</div>
+      </div>
+</div>

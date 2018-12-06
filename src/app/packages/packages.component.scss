@@ -1,0 +1,19 @@
+@import 'variables';
+h3 , p{ 
+    color:$primaryColor;
+}
+.category-tabs{
+    display: flex;
+    justify-content: center;
+    .category-item{
+        color:$lightColor;
+        background: $primaryColor;
+        padding:5px 10px;
+        margin:5px;
+        cursor: pointer;
+        border-radius: 3px;
+        &.active{
+            background: $secondryColor;
+        }
+    }
+}

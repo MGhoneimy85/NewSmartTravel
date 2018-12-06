@@ -10,7 +10,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { PackadgesComponent } from './packadges/packadges.component';
+import { PackagesComponent } from './packages/packages.component';
 import { OurCompanyComponent } from './our-company/our-company.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,7 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeCarouselComponent,
     PartnersComponent,
     ContactUsComponent,
-    PackadgesComponent,
+    PackagesComponent,
     OurCompanyComponent
   ],
   imports: [
