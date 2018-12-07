@@ -12,38 +12,42 @@ export class HomeCarouselComponent implements OnInit {
     {
       title: 'PARIS ROUNDTRIP',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/paris.png'
+      imgPath: '../../assets/content-images/paris.png'
     },
     {
       title: 'PARIS & ROME ROUNDTRIP',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/paris2.png'
+      imgPath: '../../assets/content-images/paris2.png'
     },
     {
       title: 'SHARM EL-SHEIKH ROUNDTRIP',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/big_sharm.jpg'
+      imgPath: '../../assets/content-images/big_sharm.jpg'
     },
     {
       title: 'CAIRO ROUNDTRIP',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/big_cairo.jpg'
+      imgPath: '../../assets/content-images/big_cairo.jpg'
     },
     {
       title: 'QATAR ROUNDTRIP',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/big_qatar.jpg'
+      imgPath: '../../assets/content-images/big_qatar.jpg'
     },
     {
       title: 'HIIJ and UMRAH',
       desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath:'../../assets/content-images/big_SA.jpg'
+      imgPath: '../../assets/content-images/big_SA.jpg'
     }
   ];
   constructor() { }
 
   ngOnInit() {
-    console.log(this.images);
+
+  }
+
+  goToDetailsPage(item) {
+    console.log('route to details page for :' + item.title);
   }
 
 }
