@@ -14,6 +14,7 @@ import { PackagesComponent } from './packages/packages.component';
 import { OurCompanyComponent } from './our-company/our-company.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'ngx-owl-carousel';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');

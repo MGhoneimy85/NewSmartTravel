@@ -1,6 +1,6 @@
 <h3>{{ 'partners' | translate }}</h3>
 
-<div class="container d-none d-md-block">
+<div class="container d-none d-md-block" dir="LTR">
   <div class="owl-carousel-container">
     <owl-carousel #owlElement [options]="{ items: 5, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
       <div class="item" *ngFor="let image of images;let i = index">
@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<div class="container d-block d-md-none">
+<div class="container d-block d-md-none"  dir="LTR">
   <div class="owl-carousel-container">
     <owl-carousel #owlElement [options]="{ items: 1, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
       <div class="item" *ngFor="let image of images;let i = index">
