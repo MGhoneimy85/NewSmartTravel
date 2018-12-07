@@ -1,3 +1,21 @@
-<p>
-  partners works!
-</p>
+<h3>{{ 'partners' | translate }}</h3>
+
+<div class="container d-none d-md-block">
+  <div class="owl-carousel-container">
+    <owl-carousel #owlElement [options]="{ items: 5, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
+      <div class="item" *ngFor="let image of images;let i = index">
+        <img src="{{image}}" />
+      </div>
+    </owl-carousel>
+  </div>
+</div>
+
+<div class="container d-block d-md-none">
+  <div class="owl-carousel-container">
+    <owl-carousel #owlElement [options]="{ items: 1, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
+      <div class="item" *ngFor="let image of images;let i = index">
+        <img src="{{image}}" />
+      </div>
+    </owl-carousel>
+  </div>
+</div>

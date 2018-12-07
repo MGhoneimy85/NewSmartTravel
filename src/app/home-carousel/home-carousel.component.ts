@@ -40,7 +40,13 @@ export class HomeCarouselComponent implements OnInit {
       imgPath: '../../assets/content-images/big_SA.jpg'
     }
   ];
-  constructor() { }
+  constructor(config: NgbCarouselConfig) {
+    // customize default values of carousels used by this component tree
+    config.interval = 3000;
+    config.wrap = true;
+    config.keyboard = false;
+    config.pauseOnHover = false;
+  }
 
   ngOnInit() {
 

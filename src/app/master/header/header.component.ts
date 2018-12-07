@@ -35,7 +35,7 @@ export class HeaderComponent implements AfterViewInit {
   }
   scroll(id) {
     const el = document.getElementById(id);
-    el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 
   onLangChange(lang: string) {

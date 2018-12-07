@@ -32,8 +32,7 @@
         left: 0;
         bottom: 0;
         top: 0;
-        padding-bottom: 30px;
-        padding-top: 40%;
+        padding: 25%;
         height: 100%;
         h3{
             margin:10px 0;
@@ -68,13 +67,44 @@
         right:0
     }
     .carousel-indicators{
-        margin-bottom: 0;
+        
         li{
             width:12px;
             height: 12px;
             background-color: $lightColor;
             &.active{
                 background-color: $secondryColor;
+            }
+        }
+    }
+}
+
+
+@media (max-width:500px){
+    /deep/ .carousel {
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height:300px;
+                }
+            }
+        }
+        .carousel-caption{
+            padding: 15%;
+        }
+        .carousel-control-prev-icon{
+            width: 30px;
+            height: 30px;
+        }
+        .carousel-control-next-icon{
+            width: 30px;
+            height: 30px;
+        }
+        .carousel-indicators{
+            
+            li{
+                width:6px;
+                height: 6px;
             }
         }
     }
