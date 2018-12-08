@@ -19,7 +19,6 @@ export class HeaderComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.menuPosition = this.menuElement.nativeElement.offsetTop;
-    console.log(this.menuPosition);
   }
 
   @HostListener('window:scroll', ['$event'])

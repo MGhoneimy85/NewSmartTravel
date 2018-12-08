@@ -13,7 +13,7 @@
               <div class="navbar-expand">
                 <div class="navbar-nav">
                     <a *ngFor="let n of menuItems" class="nav-item nav-link" [class.active]="clicked === n" 
-                    (click)="clicked = n;scroll( n )">{{ n | translate}}</a>
+                    (click)="clicked = n;scroll( n )" routerLink="/home">{{ n | translate}}</a>
                 </div>
               </div>
             </nav>

@@ -12,7 +12,6 @@ export class PackageDetailsComponent implements OnInit {
   constructor( private globalService: GlobalServiceService , private language: TranslateService ) { }
 
   ngOnInit() {
-    console.log(this.globalService.selectedPackage);
   }
 
 }
