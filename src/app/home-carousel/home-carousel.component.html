@@ -1,5 +1,6 @@
-<ngb-carousel *ngIf="packagesList">
-  <ng-template ngbSlide *ngFor="let pack of packagesList">
+<div *ngIf="packagesListFiltered">
+<ngb-carousel #myCarousel="ngbCarousel">
+  <ng-template ngbSlide *ngFor="let pack of packagesListFiltered;let i = index" id="{{i}}">
     <img [src]="pack.imgPath" alt="Random slide">
     <div class="carousel-caption" >
       <h3>{{ pack.title }}</h3>
@@ -8,3 +9,4 @@
     </div>
   </ng-template>
 </ngb-carousel>
+</div>

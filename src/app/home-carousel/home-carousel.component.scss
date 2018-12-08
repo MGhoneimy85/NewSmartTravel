@@ -17,6 +17,7 @@
 }
 
 /deep/ .carousel {
+    height: 600px;
     .carousel-inner{
         .carousel-item{
             img{
@@ -82,6 +83,7 @@
 
 @media (max-width:500px){
     /deep/ .carousel {
+        height: 300px;
         .carousel-inner{
             .carousel-item{
                 img{

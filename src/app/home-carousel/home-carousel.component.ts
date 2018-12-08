@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { GlobalServiceService } from '../global-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Http } from '@angular/http';
 @Component({
   selector: 'app-home-carousel',
   templateUrl: './home-carousel.component.html',
@@ -7,40 +10,16 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig]
 })
 export class HomeCarouselComponent implements OnInit {
+  @ViewChild('myCarousel') myCarousel: NgbCarousel;
+  fileName = 'assets/data/packagesObject.json';
+  packagesList = [];
+  packagesListFiltered = [];
+  constructor(config: NgbCarouselConfig,
+    private globalService: GlobalServiceService,
+    private http: Http,
+    private route: ActivatedRoute,
+    private router: Router) {
 
-  packagesList = [
-    {
-      title: 'PARIS ROUNDTRIP',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/paris.png'
-    },
-    {
-      title: 'PARIS & ROME ROUNDTRIP',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/paris2.png'
-    },
-    {
-      title: 'SHARM EL-SHEIKH ROUNDTRIP',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/big_sharm.jpg'
-    },
-    {
-      title: 'CAIRO ROUNDTRIP',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/big_cairo.jpg'
-    },
-    {
-      title: 'QATAR ROUNDTRIP',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/big_qatar.jpg'
-    },
-    {
-      title: 'HIIJ and UMRAH',
-      desc: '7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det',
-      imgPath: '../../assets/content-images/big_SA.jpg'
-    }
-  ];
-  constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 3000;
     config.wrap = true;
@@ -49,11 +28,30 @@ export class HomeCarouselComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.readJsonFile(this.fileName);
+  }
 
+  readJsonFile(jsonFileName) {
+    this.http.get(jsonFileName).subscribe(data => {
+      this.packagesList = data.json();
+      this.selectedCategory('home');
+      this.myCarousel.select('4');
+    }, error => {
+      console.log(error);
+    });
+  }
+  selectedCategory(category: string) {
+    this.packagesListFiltered = [];
+    for (const item of this.packagesList) {
+      if (item.cat.toString() === category) {
+        this.packagesListFiltered.push(item);
+      }
+    }
   }
 
   goToDetailsPage(item) {
-    console.log('route to details page for :' + item.title);
+    this.globalService.selectedPackage = item;
+    this.router.navigate(['/package-details']);
   }
 
 }

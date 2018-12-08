@@ -14,7 +14,11 @@ import { PackagesComponent } from './packages/packages.component';
 import { OurCompanyComponent } from './our-company/our-company.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'ngx-owl-carousel';
-
+import { AppRoutingModule } from './app-routing.module';
+import { HomePageComponent } from './home-page/home-page.component';
+import { PackageDetailsPageComponent } from './package-details-page/package-details-page.component';
+import { PackageDetailsComponent } from './package-details/package-details.component';
+import { HttpModule } from '@angular/http';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');
@@ -29,7 +33,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     PartnersComponent,
     ContactUsComponent,
     PackagesComponent,
-    OurCompanyComponent
+    OurCompanyComponent,
+    HomePageComponent,
+    PackageDetailsPageComponent,
+    PackageDetailsComponent
   ],
   imports: [
     HttpClientModule,
@@ -42,7 +49,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     NgbModule,
     OwlModule,
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    AppRoutingModule
   ],
   exports: [LayoutComponent],
   providers: [],

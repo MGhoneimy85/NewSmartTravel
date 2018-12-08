@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col" *ngIf="globalService.selectedPackage">
+      <img src="{{globalService.selectedPackage.imgPath}}" />
+      <h3>{{globalService.selectedPackage.title | translate }}</h3>
+      <p>Price :  {{globalService.selectedPackage.startingPrice}}</p>
+    </div>
+  </div>
+</div>
