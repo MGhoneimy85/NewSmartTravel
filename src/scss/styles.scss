@@ -19,10 +19,16 @@ h3{
     direction: rtl;
     font-family: Tahoma;
     .pull-left{
-        float:right !important;
+        float: right !important;
     }
     .pull-right{
-        float:left !important;
+        float: left !important;
+    }
+    .text-right{
+        text-align: left !important;
+    }
+    .text-left{
+        text-align: right !important;
     }
 }
 

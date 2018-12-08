@@ -3,6 +3,7 @@ import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { GlobalServiceService } from '../global-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Http } from '@angular/http';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-home-carousel',
   templateUrl: './home-carousel.component.html',
@@ -16,6 +17,7 @@ export class HomeCarouselComponent implements OnInit {
   packagesListFiltered = [];
   constructor(config: NgbCarouselConfig,
     private globalService: GlobalServiceService,
+    private language: TranslateService,
     private http: Http,
     private route: ActivatedRoute,
     private router: Router) {

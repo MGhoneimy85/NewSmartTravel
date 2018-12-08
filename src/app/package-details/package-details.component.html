@@ -1,9 +1,68 @@
-<div class="container">
+<div class="package-details-banner" *ngIf="globalService.selectedPackage" [style.backgroundImage]="'url('+ globalService.selectedPackage.imgPath +')'">
+  <div class="overlay"></div>
+</div>
+<div class="container" *ngIf="globalService.selectedPackage">
   <div class="row">
-    <div class="col" *ngIf="globalService.selectedPackage">
-      <img src="{{globalService.selectedPackage.imgPath}}" />
-      <h3>{{globalService.selectedPackage.title | translate }}</h3>
-      <p>Price :  {{globalService.selectedPackage.startingPrice}}</p>
+    <div class="col-md-6">
+      <div class="title-price" *ngIf="language.currentLang == 'en'">
+        <h4 class="pull-left">{{ globalService.selectedPackage.title | translate }}</h4>
+        <span class="price pull-left"> {{globalService.selectedPackage.startingPrice}} </span>
+      </div>
+      <div class="title-price" *ngIf="language.currentLang == 'ar'">
+        <h4 class="pull-left ">{{globalService.selectedPackage.titleAR | translate }}</h4>
+        <span class="price pull-left"> {{globalService.selectedPackage.startingPrice}} </span>
+      </div>
+
+    </div>
+    <div class="col-md-6 more-info">
+      <div class="col text-right">
+        <span dir="LTR">012 222 11 932</span>
+        <br>
+        <span>{{ 'more_info' | translate }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-left package-details-data">
+        Euro Trip Summer Group" <br>
+        Vienna, Prague & Budapest <br>
+        10 Days 9 Nights <br>
+        (from 16 Jul. 2017 till 25 Jul. 2017) or ( 12 Aug. 2017 till 21 Aug. 2017) <br>
+        Just for 950 USD per person <br>
+        <br><br>
+        <h6>Package Includes:</h6>
+        <ul>
+          <li>International flight ticket.</li>
+          <li>Internal Train ticket from Budapest to Prague.</li>
+          <li>Internal Bus ticket from Prague to Vienna.</li>
+          <li>03 night accommodation in Prague.</li>
+          <li>03 night accommodation in Budapest.</li>
+          <li>03 night accommodation in Vienna</li>
+          <li>Internal Train ticket from Budapest to Prague.</li>
+          <li>Internal Bus ticket from Prague to Vienna.</li>
+          <li>International flight ticket.</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <form>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="{{'name' | translate}}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="{{'email' | translate}}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="number" class="form-control" id="phonenumber" aria-describedby="phonenumber" placeholder="{{'phone_number' | translate}}">
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-danger pull-right">{{ 'book_now' | translate }}</button>
+          </form>
     </div>
   </div>
 </div>

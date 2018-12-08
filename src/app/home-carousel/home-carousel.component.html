@@ -3,9 +3,11 @@
   <ng-template ngbSlide *ngFor="let pack of packagesListFiltered;let i = index" id="{{i}}">
     <img [src]="pack.imgPath" alt="Random slide">
     <div class="carousel-caption" >
-      <h3>{{ pack.title }}</h3>
-      <p>{{ pack.desc }}</p>
-      <button type="button" (click)="goToDetailsPage(pack)"  >More info</button>
+      <h3 *ngIf="language.currentLang == 'en'">{{ pack.title }}</h3>
+      <h3 *ngIf="language.currentLang == 'ar'">{{ pack.titleAR }}</h3>
+      <p  *ngIf="language.currentLang == 'en'" >{{ pack.desc }}</p>
+      <p  *ngIf="language.currentLang == 'ar'" >{{ pack.descAR }}</p>
+      <button type="button" (click)="goToDetailsPage(pack)"  >{{ 'more_info' | translate }}</button>
     </div>
   </ng-template>
 </ngb-carousel>

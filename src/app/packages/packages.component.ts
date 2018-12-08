@@ -53,7 +53,13 @@ export class PackagesComponent implements AfterViewInit {
 
   goToDetailsPage(item) {
     this.globalService.selectedPackage = item;
-    this.router.navigate(['/package-details']);
+    console.log(this.router.url);
+    if (this.router.url === '/package-details') {
+      window.scrollTo(0, 0);
+    } else {
+      this.router.navigate(['/package-details']);
+    }
+
   }
 
 }

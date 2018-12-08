@@ -1,0 +1,48 @@
+@import 'variables';
+
+.package-details-banner{
+    width:100%;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        background: rgba(44,62,80,.5);
+        z-index: 2;
+    }
+}
+.title-price{
+    margin: 20px 0;
+    display: flex;
+    h4{
+        color: $lightColor;
+        text-transform: uppercase;
+        font-size: 33px;
+    }
+    .price{
+        margin:0 0 0 30px;
+        color: $normalGrayColor;
+        padding-top: 5px;
+    }
+}
+.more-info{
+    color: $lightColor;
+    .col{
+        padding-top: 15px; 
+    }
+}
+.package-details-data{
+    color: $lightColor;
+}
+:host-context(.ar) {
+    .title-price{
+        .price{
+            margin:0 30px 0 0 ;
+        }
+    }
+}

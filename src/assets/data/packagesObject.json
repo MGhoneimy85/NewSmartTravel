@@ -2,7 +2,8 @@
     "cat": "domestic",
     "title": "cairo",
     "titleAR": "القاهره",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/cairo.png"
   },
@@ -10,7 +11,8 @@
     "cat": "domestic",
     "title": "luxor",
     "titleAR": "لقصر",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/luxor.png"
   },
@@ -18,7 +20,8 @@
     "cat": "domestic",
     "title": "sharm",
     "titleAR": "شرم الشيخ",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/sharm.png"
   },
@@ -26,7 +29,8 @@
     "cat": "domestic",
     "title": "hurghada",
     "titleAR": "الغردقه",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/hurghada.png"
   },
@@ -34,7 +38,8 @@
     "cat": "foreign",
     "title": "paris",
     "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/paris3.png"
   },
@@ -42,7 +47,8 @@
     "cat": "foreign",
     "title": "rome",
     "titleAR": "روما",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/rome.png"
   },
@@ -50,7 +56,8 @@
     "cat": "foreign",
     "title": "usa",
     "titleAR": "امريكا",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/usa.png"
   },
@@ -58,7 +65,8 @@
     "cat": "arab",
     "title": "qatar",
     "titleAR": "قطر",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/qatar.png"
   },
@@ -66,7 +74,8 @@
     "cat": "arab",
     "title": "dubai",
     "titleAR": "دبي",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/dubai.png"
   },
@@ -74,7 +83,8 @@
     "cat": "religious",
     "title": "Hijj & Umrah",
     "titleAR": "حج و عمره",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/hijjandumrah.png"
   },
@@ -83,6 +93,7 @@
     "title": "Hijj",
     "titleAR": "حج",
     "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/SA.png"
   },
@@ -90,7 +101,8 @@
     "cat": "religious",
     "title": "Umrah",
     "titleAR": "عمره",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
     "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/SA2.png"
   },
@@ -98,41 +110,53 @@
     "cat": "home",
     "title": "PARIS ROUNDTRIP",
     "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/paris.png"
   },
   {
     "cat": "home",
     "title": "PARIS & ROME ROUNDTRIP",
-    "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "titleAR": "باريس و روما",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/paris2.png"
   },
   {
     "cat": "home",
     "title": "SHARM EL-SHEIKH ROUNDTRIP",
-    "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "titleAR": "شرم الشيخ",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/big_sharm.jpg"
   },
   {
     "cat": "home",
     "title": "CAIRO ROUNDTRIP",
-    "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "titleAR": "القاهره",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/big_cairo.jpg"
   },
   {
     "cat": "home",
     "title": "QATAR ROUNDTRIP",
-    "titleAR": "باريس",
-    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "titleAR": "قطر",
+    "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",     
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/big_qatar.jpg"
   },
   {
     "cat": "home",
     "title": "HIIJ and UMRAH",
-    "titleAR": "باريس",
+    "titleAR": " الحج و العمره ",
     "desc": "7 Days 6 Nights, Inlduing: Airlines Tickets, Visa, Any more det",
+    "descAR":"7 أيام 6 ليالي ، بما في ذلك: شركات الطيران تذاكر ، فيزا ، أي أكثر من ذلك",
+    "startingPrice": "3.999 EGP",
     "imgPath": "../../assets/content-images/big_SA.jpg"
   }]
